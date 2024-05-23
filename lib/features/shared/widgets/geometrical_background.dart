@@ -59,9 +59,7 @@ class GeometricalBackground extends StatelessWidget {
   }
 }
 
-/// El objetivo de este widget es crear una final de figuras geometricas
-/// Es Stateful porque quiero mantener el estado del mismo
-/// El initState rompe la referencia para que lo pueda usar en varios lugares
+
 class ShapeRow extends StatefulWidget {
   const ShapeRow({
     super.key,

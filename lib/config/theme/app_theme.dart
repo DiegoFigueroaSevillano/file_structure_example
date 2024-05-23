@@ -8,11 +8,11 @@ const scaffoldBackgroundColor = Color(0xFFF8F7F7);
 class AppTheme {
 
   ThemeData getTheme() => ThemeData(
-    ///* General
+
     useMaterial3: true,
     colorSchemeSeed: colorSeed,
 
-    ///* Texts
+
     textTheme: TextTheme(
       titleLarge: GoogleFonts.montserratAlternates()
         .copyWith( fontSize: 40, fontWeight: FontWeight.bold ),
@@ -22,11 +22,11 @@ class AppTheme {
         .copyWith( fontSize: 20 )
     ),
 
-    ///* Scaffold Background Color
+
     scaffoldBackgroundColor: scaffoldBackgroundColor,
     
 
-    ///* Buttons
+
     filledButtonTheme: FilledButtonThemeData(
       style: ButtonStyle(
         textStyle: MaterialStatePropertyAll(
@@ -36,7 +36,6 @@ class AppTheme {
       )
     ),
 
-    ///* AppBar
     appBarTheme: AppBarTheme(
       color: scaffoldBackgroundColor,
       titleTextStyle: GoogleFonts.montserratAlternates()

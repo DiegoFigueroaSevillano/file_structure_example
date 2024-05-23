@@ -16,13 +16,11 @@ final goRouterProvider = Provider<GoRouter>((ref) {
     refreshListenable: goRouterNotifier,
     routes: [
 
-      ///* Primera pantalla
       GoRoute(
         path: '/splash',
         builder: (context, state) => const CheckAuthStatusScreen(),
       ),
 
-      ///* Auth Routes
       GoRoute(
         path: '/login',
         builder: (context, state) => const LoginScreen(),
@@ -32,7 +30,7 @@ final goRouterProvider = Provider<GoRouter>((ref) {
         builder: (context, state) => const RegisterScreen(),
       ),
 
-      ///* Product Routes
+
       GoRoute(
         path: '/',
         builder: (context, state) => const ProductsScreen(),
